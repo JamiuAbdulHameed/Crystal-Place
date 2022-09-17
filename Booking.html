@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="menu">
+    <button aria-expanded="fa" aria-controls="menu-list">
+      <span class="open">&#9776;</span>
+      <span class="close">&#10006;</span>
+      Menu
+    </button>
+    <ul id="menu-list">
+      <li>
+        <a href="Main Page.html">Home</a>
+      </li>
+      <li>
+        <a href="Food.html">Food</a>
+      </li>
+      <li>
+        <a href="Drinks.html">Drinks</a>
+      </li>
+      <li>
+        <a href="Desserts.html">Desserts</a>
+      </li>
+      <li>
+        <a href="Booking.html">Booking</a>
+      </li>
+    </ul>
+  </nav>
+  <center>
+    <form>
+      <fieldset>
+        <table>
+          <br><br><br>
+          <h1>Book a Reservation</h1>
+          <tr>
+            <th> Fullname</th>
+            <td>:</td>
+            <td><Input type="text" name="name" id="name1" placeholder="Name"></Input></td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>:</td>
+            <td><Input type="email" name="email" id="name1" placeholder="Email"></Input></td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td>:</td>
+            <td><Input type="number" name="name" id="name1" placeholder="Phone"></Input></td>
+          </tr>
+          <tr>
+            <th>Number of Guests</th>
+            <td>:</td>
+            <td><Input type="number" name="name" id="name1" placeholder="No of Guest"></Input></td>
+          </tr>
+          <tr>
+            <th>Reservation Date</th>
+            <td>:</td>
+            <td><Input type="date" name="name" id="name1" placeholder="Name"></Input></td>
+          </tr>
+          <tr>
+            <th>Reservation Type</th>
+            <td>:</td>
+            <td>
+              <select name="" id="">
+                <option value="select" selected>Please Select</option>
+                <option value="Dinner">Dinner</option>
+                <option value="VIP/Mezzanine">VIP/Mezzanine</option>
+                <option value="Birthday/Annavasary">Birthday/Annivasary</option>
+                <option value="Private">Private</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Holiday">Holiday</option>
+                <option value="others">Others...</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>Meal Type</th>
+            <td>:</td>
+            <td><select name="" id="">
+              <option value="select" selected>Please Select</option>
+              <option value="food">Foods & Drinks</option>
+              <option value="drinks">Drinks</option>
+              <option value="Desserts">Desserts</option>
+              <option value="others">Others....</option>
+            </td>
+          </tr>
+          <tr>
+            <th>Any Special Request</th>
+            <td>:</td>
+            <td><Input type="" name="name" id="name1" placeholder="Request"></Input></td>
+          </tr>
+        </table>
+        <div style="margin-top: 20px;">
+          <tr>
+            <td>
+              <input type="submit" value="Send" name="send" id="send1">
+              <input type="submit" value="Update" name="update" id="update1">
+            </td>
+          </tr>
+          <td>
+            <input type="submit" value="Cancel" name="cancel" id="cancel1">
+            <input type="submit" value="Delete" name="delete" id="delete">
+          </td>
+        </div><br>
+        <marquee width="90%" behavior="" direction="left"> For Enquires Please call: 08026917604 or 07012036049</marquee>
+      </fieldset>
+    </form>
+    <style>
+      h1{
+        font-size: 44p;
+        color: black;
+      }
+      input{
+        border-radius: 10px;
+        width: 250px;
+        height: 35px;
+        text-indent: 5px;
+      }
+      select{
+        border-radius: 10px;
+        width: 250px;
+        height: 35px;
+        text-indent: 5px;
+      }
+      input:focus{
+        outline: none;
+      }
+      fieldset{
+        width: 35%;
+        height: 750px;
+        background-color:#ffc600;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        align-items: center;
+      }
+      table{
+        font-size: 22px;
+      }
+      td{
+        line-height: 50px;
+      }
+      input[type="submit"]{
+        width: 120px;
+        height: 30px;
+        background-color: black;
+        color: #ffc600;
+      }
+      input[type="submit"]:hover{
+        background-color: none;
+        cursor: pointer;
+      }
+    </style>
+  </center>
+      <style>
+        body{
+          background-image: url(images/beautifulresturant2.jpg);
+          background-size: cover;
+          background-attachment: fixed;
+        }
+          .menu ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .menu a {
+    background: #ffc600;
+    display: block;
+    text-decoration: none;
+    padding: 10px; 
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  [aria-controls="menu-list"] {
+    display: none;
+  }
+  html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+}
+      </style>
+</body>
+</html>

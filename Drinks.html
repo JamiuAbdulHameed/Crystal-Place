@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="menu">
+    <button aria-expanded="fa" aria-controls="menu-list">
+      <span class="open">&#9776;</span>
+      <span class="close">&#10006;</span>
+      Menu
+    </button>
+    <ul id="menu-list">
+      <li>
+        <a href="Main Page.html">Home</a>
+      </li>
+      <li>
+        <a href="Food.html">Food</a>
+      </li>
+      <li>
+        <a href="Drinks.html">Drinks</a>
+      </li>
+      <li>
+        <a href="Desserts.html">Desserts</a>
+      </li>
+      <li>
+        <a href="Booking.html">Booking</a>
+      </li>
+    </ul>
+  </nav>
+  <section class="images">
+    <h1 style="font-weight:bold; text-align: center; color: black; font-weight: bolder;">DRINKS WE OFFER</h1>
+    <img src="images/drink1.jpg" width="500px" alt="" class="img1">
+    <img src="images/drink2.jpg" width="500px" alt="" class="img2">
+    <img src="images/drink3.jpg" width="500px" alt="" class="img3">
+    <img src="images/drink4.png" width="500px" alt="" class="img4">
+  </section>
+  <div class="order">
+    <a href=""><button style="color: black; text-align: middle;">ORDER NOW!!! <span style="color: red;">&#128293;</span></button></a>
+  </div>
+      <style>
+        button {
+    background: #ffc600;
+    border: none;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 50px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+  }
+  .img1{
+    position: absolute;
+    left: 14%;
+    height: 96%;
+  }
+  .img2{
+    position: absolute;
+    left: 55%;
+    height: 95%;
+  }
+  .img3{
+    position: absolute;
+    left: 14%;
+    top: 120%;
+    height: 88%;
+  }
+  .img4{
+    position: absolute;
+    left: 55%;
+    top: 120%;
+    height: 88%;
+  }
+
+  .order{
+    position: absolute;
+    left: 34%;
+    top: 210%;
+    padding-bottom: 20px;
+  }
+        body{
+          background-image: url(images/winewithperfectview.jpg);
+          background-size: cover;
+          background-attachment: fixed;
+        }
+          .menu ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .menu a {
+    background: #ffc600;
+    display: block;
+    text-decoration: none;
+    padding: 10px; 
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  [aria-controls="menu-list"] {
+    display: none;
+  }
+  html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+}
+      </style>
+</body>
+</html>
